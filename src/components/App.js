@@ -7,6 +7,8 @@ import Web3 from 'web3'
 
 import opensea from '../images/socials/opensea.svg'
 import NinjaShowcase from '../images/NinjaShowcase.png'
+import ShowcaseCollage from '../images/ShowcaseCollage.png'
+
 import '../App.css'
 
 // Import Components
@@ -185,11 +187,7 @@ function App() {
 
 					<Row className='flex m-3'>
 						<Col md={5} lg={4} xl={5} xxl={4} className='text-center'>
-							<img
-								src={`https://gateway.pinata.cloud/ipfs/QmNxgpveZ6rCCRZZ9pxgU22qBR8FYuJYH3zSHZkQwc7uoV/${counter}.png`}
-								alt="ETH NINJAS"
-								className='showcase'
-							/>
+							<img src={ShowcaseCollage} width={400} height={400} alt="ShowcaseCollage" className='ShowcaseCollage'/>
 						</Col>
 						<Col md={5} lg={4} xl={5} xxl={4}>
 							{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} className='countdown mx-3' />}
