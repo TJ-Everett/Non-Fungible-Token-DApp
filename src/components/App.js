@@ -153,7 +153,7 @@ function App() {
 			setCounter(counter)
 		}
 
-		if (!isCycling) { setInterval(getRandomNumber, 5000) }
+		if (!isCycling) { setInterval(getRandomNumber, 10000) }
 		setIsCycling(true)
 	}
 
